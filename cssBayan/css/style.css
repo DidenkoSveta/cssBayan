@@ -194,8 +194,9 @@ input {
   transition: 0.3s;
 }
 
-.acordeon-item img {
+.acordeon-item label img {
   opacity: 0;
+  transform: scale(0.7);
   -webkit-transition: 0.6s linear;
   -o-transition: 0.6s linear;
   transition: 0.6s linear;
@@ -204,6 +205,8 @@ input {
 .acordeon-item input:checked + label img {
   display: block;
   opacity: 1;
+  transform: scale(1.1);
+  transition-duration: 0.4s;
   -webkit-transition: -webkit-transform 0.35s;
   transition: -webkit-transform 0.35s;
   -o-transition: transform 0.35s;
@@ -228,6 +231,8 @@ input {
 
 .acordeon-item:hover {
   cursor: pointer;
+  transform: scale(1.01);
+  transition-duration: 0.4s;
 }
 .acordeon-item:hover label img {
   display: block;
@@ -236,11 +241,8 @@ input {
   -webkit-transition-property: opacity;
   -o-transition-property: opacity;
   transition-property: opacity;
-  -webkit-transition: -webkit-transform 2s;
-  transition: -webkit-transform 2s;
-  -o-transition: transform 2s;
-  transition: transform 2s;
-  transition: transform 2s, -webkit-transform 2s;
+  transform: scale(0.8);
+  transition-duration: 0.4s;
 }
 .acordeon-item:hover span {
   -webkit-transition: -webkit-transform 0.35s;
